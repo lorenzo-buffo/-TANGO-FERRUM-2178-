@@ -5,8 +5,8 @@ export default class Start extends Phaser.Scene {
 
 
 preload (){
-this.load.image("Play", "../public/assets/play.png")
-this.load.image("Ayuda", "../public/assets/ayuda.png")
+this.load.image("Play", "./public/assets/play.png")
+this.load.image("Ayuda", "./public/assets/ayuda.png")
 }
 
 create(){

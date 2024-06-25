@@ -16,19 +16,19 @@ export default class game extends Phaser.Scene {
 
 
   preload() {
-    this.load.image("Cielo", "../public/assets/background.png");
-    this.load.image("plataforma", "../public/assets/plataforma.png");
-    this.load.spritesheet("personaje", "../public/assets/SpriteSheet.png", {
+    this.load.image("Cielo", "./public/assets/background.png");
+    this.load.image("plataforma", "./public/assets/plataforma.png");
+    this.load.spritesheet("personaje", "./public/assets/SpriteSheet.png", {
     frameWidth: 32,
     frameHeight: 48,
     });
-    this.load.image("balas", "../public/assets/balas.png");
-    this.load.image("enemigo", "../public/assets/enemigo.png");
-    this.load.image("reloj", "../public/assets/reloj.png");
-    this.load.image("obstaculo1", "../public/assets/circulo.png");
-    this.load.image("obstaculo2", "../public/assets/cuadrado.png");
-    this.load.image("obstaculo3", "../public/assets/rombo.png");
-    this.load.image("obstaculo4", "../public/assets/triangulo.png");
+    this.load.image("balas", "./public/assets/balas.png");
+    this.load.image("enemigo", "./public/assets/enemigo.png");
+    this.load.image("reloj", "./public/assets/reloj.png");
+    this.load.image("obstaculo1", "./public/assets/circulo.png");
+    this.load.image("obstaculo2", "./public/assets/cuadrado.png");
+    this.load.image("obstaculo3", "./public/assets/rombo.png");
+    this.load.image("obstaculo4", "./public/assets/triangulo.png");
   }
 
 
