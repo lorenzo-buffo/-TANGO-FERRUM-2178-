@@ -1,6 +1,6 @@
 import Start from "./scenes/Start.js";
 import game from "./scenes/game.js";
-import End from "../scenes/End.js"; 
+import End from "./scenes/End.js"; 
 import Help from "./scenes/Help.js"; 
 
 // Create a new Phaser config object
