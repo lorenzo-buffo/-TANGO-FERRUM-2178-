@@ -17,23 +17,23 @@ export default class game extends Phaser.Scene {
 
 
   preload() {
-    this.load.image("Cielo", "../public/assets/background.png");
-    this.load.image("plataforma", "../public/assets/plataforma.png");
-    this.load.spritesheet("personaje", "../public/assets/SpriteSheet.png", {
+    this.load.image("Cielo", "./public/assets/background.png");
+    this.load.image("plataforma", "./public/assets/plataforma.png");
+    this.load.spritesheet("personaje", "./public/assets/SpriteSheet.png", {
     frameWidth: 125,
     frameHeight: 110,
     });
-    this.load.image("balas", "../public/assets/balas.png");
-    this.load.spritesheet("enemigo", "../public/assets/enemigo.png", {
+    this.load.image("balas", "./public/assets/balas.png");
+    this.load.spritesheet("enemigo", "./public/assets/enemigo.png", {
       frameWidth: 250,
       frameHeight: 130,
     });
-    this.load.image("reloj", "../public/assets/reloj.png");
-    this.load.image("obstaculo1", "../public/assets/auto.png");
-    this.load.image("obstaculo2", "../public/assets/piedra.png");
-    this.load.image("obstaculo3", "../public/assets/arbusto.png");
-    this.load.image("obstaculo4", "../public/assets/leche.png");
-    this.load.audio("MUSICA", "../public/assets/gameplay tango ferrum.mp3");
+    this.load.image("reloj", "./public/assets/reloj.png");
+    this.load.image("obstaculo1", "./public/assets/auto.png");
+    this.load.image("obstaculo2", "./public/assets/piedra.png");
+    this.load.image("obstaculo3", "./public/assets/arbusto.png");
+    this.load.image("obstaculo4", "./public/assets/leche.png");
+    this.load.audio("MUSICA", "./public/assets/gameplay tango ferrum.mp3");
   }
 
 

@@ -4,9 +4,9 @@ export default class End extends Phaser.Scene {
      }
      preload() {
    
-        this.load.image("Restart", "../public/assets/restart.png");
-        this.load.image("menu", "../public/assets/menu.png");
-        this.load.image("pfinal", "../public/assets/pfinal.png");
+        this.load.image("Restart", "./public/assets/restart.png");
+        this.load.image("menu", "./public/assets/menu.png");
+        this.load.image("pfinal", "./public/assets/pfinal.png");
     }
 
     create(data) {
