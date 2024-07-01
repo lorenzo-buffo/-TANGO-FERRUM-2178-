@@ -6,17 +6,19 @@ export default class End extends Phaser.Scene {
    
         this.load.image("Restart", "./public/assets/restart.png");
         this.load.image("menu", "./public/assets/menu.png");
+        this.load.image("pfinal", "./public/assets/pfinal.png");
     }
 
     create(data) {
+        this.addBackground();
          // Agregar un texto que indique que perdiste
-         this.add.text(400, 300, '¡TE ATRAPARON!', { fontSize: '48px', fill: '#fff' }).setOrigin(0.5);
+         this.add.text(400, 350, '¡TE ATRAPARON!', { fontSize: '48px', fill: '#ff' }).setOrigin(0.5);
         // Obtener los datos pasados desde la escena principal
         const tiempoJugado = data.tiempoJugado;
         const puntos = data.puntos;
         // Mostrar los datos en la pantalla
-        this.add.text(400,450, 'Puntos: ' + puntos, { fontSize: '24px', fill: '#fff' }).setOrigin(0.5);
-        this.add.text(400, 400, 'Tiempo jugado: ' + data.tiempoJugado.toFixed(2) + ' segundos', { fontSize: '24px', fill: '#fff' }).setOrigin(0.5);
+        this.add.text(400,450, 'Puntos: ' + puntos, { fontSize: '24px', fill: '#ff' }).setOrigin(0.5);
+        this.add.text(400, 400, 'Tiempo jugado: ' + data.tiempoJugado.toFixed(2) + ' segundos', { fontSize: '24px', fill: '#ff' }).setOrigin(0.5);
         const tiempoRedondeado = Math.round(data.tiempoJugado);
 
          // Agregar el botón de reinicio
@@ -57,4 +59,9 @@ export default class End extends Phaser.Scene {
          this.scene.start('start'); // Reemplaza 'main' con el nombre de tu escena principal
      });     
  }
+ addBackground() {
+    this.centerX = this.game.config.width / 2;
+    this.centerY = this.game.config.height / 2; 
+    this.background = this.add.image(this.centerX, this.centerY, "pfinal").setScale(1.0);
+}   
 }

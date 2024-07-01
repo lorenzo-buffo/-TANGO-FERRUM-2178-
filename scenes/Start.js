@@ -7,10 +7,12 @@ export default class Start extends Phaser.Scene {
 preload (){
 this.load.image("Play", "./public/assets/play.png")
 this.load.image("Ayuda", "./public/assets/ayuda.png")
+this.load.image("pprin", "./public/assets/pprin.png")
 }
 
 create(){
-    this.add.text(400, 300, 'TANGO FERRUM 2178', { fontSize: '48px', fill: '#fff' }).setOrigin(0.5);
+    this.addBackground();
+
 
     const playButton = this.add.image(100, 500, 'Play').setOrigin(0.5);
     playButton.setInteractive({ cursor: 'pointer' });
@@ -46,4 +48,9 @@ create(){
            this.scene.start('Help'); // Reemplaza 'Ayuda' con el nombre de tu escena de ayuda
        });
    }   
+   addBackground() {
+    this.centerX = this.game.config.width / 2;
+    this.centerY = this.game.config.height / 2; 
+    this.background = this.add.image(this.centerX, this.centerY, "pprin").setScale(1.0);
+}
 }
