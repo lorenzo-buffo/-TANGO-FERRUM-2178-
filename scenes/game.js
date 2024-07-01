@@ -319,6 +319,7 @@ colisionReloj(personaje, reloj) {
   this.tiempoTexto.setText('Tiempo: ' + this.tiempoRestante);
   // Mostrar texto de "+5 segundos" en la pantalla 
   this.textoTiempoExtra.setText('+5 segundos');
+  this.textoTiempoExtra.setColor('#8a2be2');
   this.time.delayedCall(1000, () => {
     this.textoTiempoExtra.setText('');
   });
