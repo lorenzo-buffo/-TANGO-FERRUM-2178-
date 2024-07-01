@@ -5,9 +5,9 @@ export default class Help extends Phaser.Scene {
 
 
 preload (){
-    this.load.image("menu", "./public/assets/menu.png")
-    this.load.image("teclas", "./public/assets/teclas.png")
-    this.load.image("payuda", "./public/assets/payuda.png")
+    this.load.image("menu", "../public/assets/menu.png")
+    this.load.image("teclas", "../public/assets/teclas.png")
+    this.load.image("payuda", "../public/assets/payuda.png")
     }
 
     create(){
