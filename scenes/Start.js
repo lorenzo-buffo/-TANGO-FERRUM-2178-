@@ -8,11 +8,12 @@ preload (){
 this.load.image("Play", "./public/assets/play.png")
 this.load.image("Ayuda", "./public/assets/ayuda.png")
 this.load.image("pprin", "./public/assets/pprin.png")
+this.load.audio("musica2", "./public/assets/startsong.mp3");
 }
 
 create(){
     this.addBackground();
-
+ 
 
     const playButton = this.add.image(100, 500, 'Play').setOrigin(0.5);
     playButton.setInteractive({ cursor: 'pointer' });
@@ -28,7 +29,7 @@ create(){
 
     playButton.on('pointerdown', () => {
         // Reiniciar el juego, en este caso, regresamos a la escena principal
-        this.scene.start('main'); // Reemplaza 'main' con el nombre de tu escena principal
+        this.scene.start('main'); 
     });  
        // Botón de ayuda
        const helpButton = this.add.image(700, 500, 'Ayuda').setOrigin(0.5);

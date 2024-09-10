@@ -37,7 +37,7 @@ export default class End extends Phaser.Scene {
 
         restartButton.on('pointerdown', () => {
         // Reiniciar el juego, en este caso, regresamos a la escena principal
-        this.scene.start('main'); // Reemplaza 'main' con el nombre de tu escena principal
+        this.scene.start('main'); 
     });     
 
         // agregar boton de menu
